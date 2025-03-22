@@ -20,7 +20,7 @@ load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 
 # Бот
-from aiogram.client.default import DefaultBotProperties
+from aiogram.client.bot import DefaultBotProperties
 bot = Bot(
     token=TOKEN,
     default=DefaultBotProperties(parse_mode=ParseMode.HTML)
